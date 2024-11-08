@@ -204,7 +204,7 @@ QByteArray YRC1000micro_command::loadJob(quint8 request_id_index, quint8 ack, qu
     for(int i=0;i<data.size();i++){
         cmd.append(data_br[i]);
     }
-    qDebug() << "Load file cmd: " << cmd << Qt::endl;
+    qDebug() << "Load file cmd: " << cmd << "\n"; 
     return cmd;
 }
 

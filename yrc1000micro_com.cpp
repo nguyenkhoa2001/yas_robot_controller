@@ -231,7 +231,7 @@ quint32 YRC1000micro_com::YRC1000microSaveJobResponse(QByteArray data){
     QFile file(filename);
     if (file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
         QTextStream stream(&file);
-        stream << data_rev << Qt::endl;
+        stream << data_rev << "\n"; 
         file.flush();
         file.close();
         qDebug() << "save to txt";
